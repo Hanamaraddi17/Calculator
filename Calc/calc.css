@@ -1,0 +1,46 @@
+*{padding: 0;
+ margin: 0;}
+
+ .display{
+    margin-top: 15px;
+    width: 263px;
+    height: 40px;
+    margin-top:20px;
+    margin-bottom:20px;
+    color:black;
+    border-radius: 15px;
+    border-color: orange;
+    border-style:block;
+    text-align: right;
+ }
+ .clac-container{
+border-radius:20px ;
+ margin-left: 40vw;
+ margin-right: 40vw;
+ margin-top:2vw;
+ width: 268px;
+ height: 360px;
+ background-color: black;
+ }
+ .title{
+    color:antiquewhite;
+    margin-left: 20px;
+    padding-top:20px;
+}
+.num{
+    background: rgb(32, 33, 33);
+    margin-bottom:8px;
+    color: white;
+    border-radius: 15px;
+    border-color: orange;
+    border-style:block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+.num:hover,.oparator:hover{
+    cursor: pointer ;
+}
+#eql{
+    width:105px;
+}
