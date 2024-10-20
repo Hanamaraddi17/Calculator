@@ -20,6 +20,9 @@ function Clr(){
     document.getElementById("text").value = value
     num=value
 }
+function clear(){
+    document.getElementById("text").value = ""
+}
 function oparator(op){
     opt=op
     num1=num
