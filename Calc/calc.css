@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in element dimensions */
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #222; /* A background to improve the contrast of the calculator */
+    background-color: #222;
 }
 
 .display {
@@ -28,11 +28,11 @@ body {
 .calc-container {
     border-radius: 20px;
     width: 100%;
-    max-width: 300px; /* Limits width on larger screens */
+    max-width: 300px;
     height: auto;
     background-color: black;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for a floating effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -60,6 +60,7 @@ body {
 }
 
 #eql {
+    grid-column: span 2; /* Span two columns */
     width: 100%;
 }
 
