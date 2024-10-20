@@ -1,46 +1,100 @@
-*{padding: 0;
- margin: 0;}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element dimensions */
+}
 
- .display{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222; /* A background to improve the contrast of the calculator */
+}
+
+.display {
     margin-top: 15px;
-    width: 263px;
+    width: 100%;
     height: 40px;
-    margin-top:20px;
-    margin-bottom:20px;
-    color:black;
+    color: black;
     border-radius: 15px;
     border-color: orange;
-    border-style:block;
+    border-style: solid;
     text-align: right;
- }
- .clac-container{
-border-radius:20px ;
- margin-left: 40vw;
- margin-right: 40vw;
- margin-top:2vw;
- width: 268px;
- height: 360px;
- background-color: black;
- }
- .title{
-    color:antiquewhite;
-    margin-left: 20px;
-    padding-top:20px;
+    padding: 10px;
+    font-size: 1.5rem;
 }
-.num{
+
+.calc-container {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px; /* Limits width on larger screens */
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for a floating effect */
+}
+
+.title {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.num {
     background: rgb(32, 33, 33);
-    margin-bottom:8px;
     color: white;
     border-radius: 15px;
-    border-color: orange;
-    border-style:block;
+    border: 2px solid orange;
     text-align: center;
-    width: 50px;
+    width: 100%;
     height: 50px;
+    font-size: 1.2rem;
 }
-.num:hover,.oparator:hover{
-    cursor: pointer ;
+
+.num:hover,
+.operator:hover {
+    cursor: pointer;
+    background: orange;
 }
-#eql{
-    width:105px;
+
+#eql {
+    width: 100%;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .calc-container {
+        width: 90vw; 
+    }
+
+    .display {
+        font-size: 1.2rem;
+    }
+
+    .num {
+        font-size: 1rem;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .display {
+        font-size: 1rem;
+    }
+
+    .num {
+        height: 40px;
+        font-size: 0.9rem;
+    }
 }
